@@ -1,0 +1,16 @@
+<div>
+Header:
+  <router-outlet name="header1"></router-outlet>
+</div>
+<div>
+Header2:
+  <router-outlet name="header2"></router-outlet>
+</div>
+<div>
+Main:
+<router-outlet></router-outlet>
+</div>
+
+<a routerLink="">Home</a>
+<a routerLink="test">Main outlet nav</a>
+<a [routerLink]="[{ outlets: { header1: ['test'], header2: ['test'] } }]">Outlet Nav</a>
